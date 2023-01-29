@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <section class="section">
+                <h1 class="h1">Сервис комментариев со спам-фильтром</h1>
+                <div class="wrapper">
+                    <div class="comments">
+                        <form name="form" class="form">
+                            <h2 class="form__title">Оставьте ваш комментарий</h2>
+                            <div class="form__name-options">
+                                <p class="form__radio-label" for="radio">Показывать ФИО в комментарии</p>
+                                <div class="form__name-option">
+                                    <input class="form__radiobtn" type="radio" value="yes" id="radio_true" name="radio" checked>
+                                    <label class="form__radiobtn-label" for="radio_true"><span>да</span></label>
+                                </div>
+                                <div class="form__name-option">
+                                    <input class="form__radiobtn" type="radio" value="no" id="radio_false" name="radio">
+                                    <label class="form__radiobtn-label" for="radio_false"><span>нет</span></label>
+                                </div>
+                            </div>
+                            <label class="comments__label" for="name">Введите ваше ФИО</label>
+                            <input class="comments__input comments__name" type="text" name="name" id="name" value="">
+                            <label class="comments__label" for="url">Введите ссылку вашего аватара</label>
+                            <input class="comments__input" type="url" name="url" id="url" value="">
+                            <label class="comments__label" for="comment">Оставьте комментарий</label>
+                            <textarea class="comments__input comments__input-textarea" name="comment" id="comment" cols="30" rows="10"></textarea>
+                            <button class="btn comments__btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="chat">
+                        <div class="chat__message">
+                            <!-- <div class="chat__message-data">Wed Jan 25 2017 16:00:00</div>
+                            <div class="chat__message-wrapper">
+                                <div class="chat__message-info">
+                                    <div class="chat__user-name">Котька</div>
+                                    <div class="chat__user-message">Дать лапку? Воть!</div>
+                                </div>
+                                <div class="chat__avatar chat__avatar_random6">
+                                </div>
+                            </div>                  -->
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </main>
+    </div>
+    <script src="./main.js"></script>   
+</body>
+</html>
